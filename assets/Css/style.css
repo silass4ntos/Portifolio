@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*font-family: "Roboto Mono", monospace;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif;*/
+
+:root {
+    --frist: rgb(255, 94, 88);
+    --second: rgb(235, 151, 42);
+    --third: rgb(255, 252, 95);
+    --fourth:#2b9eb3;
+    --fifth:#31a252;
+}   
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+    
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+    /* color of the scroll thumb */
+    border-radius: 30px;
+    /* roundness of the scroll thumb */
+}
+
+body {
+    background-color: black;
+
+}
+
+/*---------- HEADER ----------*/
+.blur{
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0px 0px 10px ;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+header nav {
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    padding: 1% 0;
+
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+.links {
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 1vw;
+    vertical-align: middle;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -1px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.links:hover {
+    transition: 0.3s;
+    filter: drop-shadow(0 0 10px white);
+}
+
+/*---------- HEADER ----------*/
+
+/*---------- MAIN ----------*/
+.bg{
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg img{
+
+    opacity: 20%;
+    object-fit: cover;
+    object-position: top;
+    height: 50vw;
+    margin: auto;
+    width: 100%;
+}
+
+.bg span{
+    position: absolute;
+    background: linear-gradient(transparent,black);
+    z-index: 2;
+    height: 50vw;
+    margin: auto;
+    width: 100%;
+}
+
+main {
+
+    color: aliceblue;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif; 
+
+}
+
+/*---------- SOBRE ----------*/
+
+.sobre {
+    padding-block: 15%;
+    text-transform: uppercase;
+
+}
+
+.sobre h5 {
+    font-size: 1.2vw;
+    letter-spacing: .5vw;
+}
+
+.sobre h1 {
+    letter-spacing: 1vw;
+    font-size: 9vw;
+}
+
+.contact {
+    padding-block: 3%;
+}
+
+.link1 {
+    display: inline;
+    margin: 0 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px;
+    background: linear-gradient(50deg, var(--frist), var(--second), var(--third));
+    font-size: 0.9vw;
+}
+
+.link1:hover {
+    opacity: 50%;
+
+}
+
+.link2 {
+    border: 1px solid rgb(235, 151, 42);
+    font-weight: 600;
+    background: linear-gradient(50deg, var(--frist), var(--second), var(--third));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.9vw;
+}
+
+.link2:hover {
+    border: 1px solid rgb(235, 151, 42);
+    color: black;
+    background-repeat: no-repeat;
+    background: linear-gradient(50deg, var(--frist), var(--second), var(--third));
+    background-clip: none;
+    -webkit-text-fill-color: inherit;
+    text-decoration: none;
+    opacity: 50%;
+}
+
+/*---------- SOBRE ----------*/
+
+/*---------- EXPERIENCES ----------*/
+
+.experiencias {
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.tiulo-tabela {
+    margin-bottom: 4%;
+    font-size: 4vw;
+}
+
+.tabelas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.tabela {
+    text-align: left;
+    width: 25%;
+    border: 1px solid white;
+    padding: 2vw 1vw;
+}
+
+.tabela p {
+    font-size: 1vw;
+    margin-top: 20px;
+}
+
+.tabela div {
+    width: 80%;
+    margin: auto;
+}
+
+.tabela i {
+    vertical-align: top;
+    font-size: 3vw;
+}
+
+.under1{
+    vertical-align: top;
+    position: relative;
+    z-index: 0;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.under2{
+    vertical-align: top;
+    position: relative;
+    z-index: 0;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.under3{
+    vertical-align: top;
+    position: relative;
+    z-index: 0;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.under1:after {
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    top: 1.4vw;
+    z-index: -1;
+    height: 0.4em;
+    width: 102%;
+    left: 0;
+    background: linear-gradient(65deg, var(--fourth) 0%, var(--fourth) 100%, rgba(255, 209, 0, 0) 100%);
+
+}
+
+.under2:after {
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    top: 1.4vw;
+    z-index: -1;
+    height: 0.4em;
+    width: 102%;
+    left: 0;
+    background: linear-gradient(65deg, var(--fifth) 0%, var(--fifth) 100%, rgba(255, 209, 0, 0) 100%);
+
+}
+
+.under3:after {
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    top: 1.4vw;
+    z-index: -1;
+    height: 0.4em;
+    width: 102%;
+    left: 0;
+    background: linear-gradient(65deg, var(--second) 0%, var(--second) 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+/*---------- EXPERIENCES ----------*/
+/*---------- PROJETOS ----------*/
+
+.projetos{
+    margin: auto;
+    width: 80%;
+}
+
+.conteudo_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.fila1, .fila2{
+    width: 50%;
+    margin: auto;
+
+}
+
+.projeto{
+    position: relative;
+    background-size: 110%;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-image: url(https://github.com/silass4ntos/silass4ntos/raw/main/img/space.gif);
+    padding: 10vw 0;
+    margin: 3vw 1vw;
+    border-radius: 2vw;
+    transition: 0.4s;
+    filter: grayscale(1);
+}
+
+.projeto:hover{
+    transition: 0.4s;
+    transform: translateY(-10px);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.projeto span{
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.fila1{
+    margin: 4vw auto;
+}
+
+.fila2{
+    margin:0;
+}
+/*---------- PROJETOS ----------*/
+
+/*---------- MAIN ----------*/
+
+/*---------- FOOTER ----------*/
+footer{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-block: 1vw;
+    font-family: "Poppins", sans-serif;
+}
+
+footer div{
+    width: 80%;
+    margin: auto;
+}
+
+footer ul{
+    list-style: none;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding-block: 1vw;
+    border-image: linear-gradient(to right, var(--frist), var(--second)) 1;
+
+}
+
+footer ul li{
+    display: inline;
+    margin-inline: 2vw;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+/*---------- FOOTER ----------*/
